@@ -24,4 +24,4 @@ Feel free to reach out if you'd like to connect or discuss any of the topics I w
 
 ## About This Site
 
-This blog is built with Jekyll and hosted on GitHub Pages. The source code is available on [GitHub](https://github.com/danielstegeman/blogposts).
+This blog is built with Jekyll and hosted on GitHub Pages. The source code is available on [GitHub](https://github.com/danielstegeman/blog).

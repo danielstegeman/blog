@@ -54,7 +54,7 @@ bundle exec jekyll build
 - Repository must be public or have GitHub Pro for private repos
 - Enable Pages in repository Settings > Pages
 - Set source to "Deploy from a branch" and select "main"
-- Site will be available at `https://danielstegeman.github.io/blogposts`
+- Site will be available at `https://danielstegeman.github.io/blog`
 
 ## Customization Points
 - Update author info and site URL in `_config.yml`

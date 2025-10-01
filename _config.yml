@@ -1,7 +1,7 @@
 # Site settings
 title: "Daniel's Blog"
 description: "Thoughts, insights, and technical musings"
-baseurl: "/blogposts"
+baseurl: "/blog"
 url: "https://danielstegeman.github.io"
 
 # Author information

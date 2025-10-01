@@ -1,0 +1,30 @@
+# Ignore Jekyll build outputs
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore bundler files
+.bundle/
+vendor/
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore editor files
+*.swp
+*.swo
+*~
+
+# Ignore log files
+*.log
+
+# Ignore local environment files
+.env
+.env.local

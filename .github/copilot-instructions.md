@@ -19,9 +19,9 @@ This is a Jekyll-based blog hosted on GitHub Pages. The site uses the Minima the
 - Dates must be in ISO format: `YYYY-MM-DD HH:MM:SS +0000`
 
 ### Deployment Workflow
-- Automatic deployment via GitHub Actions on push to main branch
-- Uses Ruby 3.1 and bundle caching for faster builds
-- Deploys to GitHub Pages with proper permissions and artifact handling
+- Direct deployment from main branch via GitHub Pages
+- GitHub automatically builds Jekyll sites when files are pushed
+- No custom GitHub Actions workflow needed
 
 ## Development Commands
 
@@ -53,7 +53,7 @@ bundle exec jekyll build
 ## GitHub Pages Setup
 - Repository must be public or have GitHub Pro for private repos
 - Enable Pages in repository Settings > Pages
-- Set source to "GitHub Actions"
+- Set source to "Deploy from a branch" and select "main"
 - Site will be available at `https://danielstegeman.github.io/blogposts`
 
 ## Customization Points

@@ -1,0 +1,17 @@
+site:
+  title: "Daniël's Blog"
+  description: "Software engineering insights on C#, .NET, Azure, and sustainable architecture"
+
+nav:
+  home: "Home"
+  about: "About"
+  posts: "Posts"
+
+posts:
+  read_more: "Read more"
+  posted_on: "Posted on"
+  categories: "Categories"
+  tags: "Tags"
+
+footer:
+  powered_by: "Powered by Jekyll & GitHub Pages"

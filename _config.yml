@@ -1,13 +1,18 @@
 # Site settings
-title: "Daniel's Blog"
-description: "Thoughts, insights, and technical musings"
+title: "Daniël's Blog"
+description: "Software engineering insights on C#, .NET, Azure, and sustainable architecture"
 baseurl: "/blog"
 url: "https://danielstegeman.github.io"
 
 # Author information
 author:
-  name: "Daniel Stegeman"
-  email: "your-email@example.com"
+  name: "Daniël Stegeman"
+  email: "Connect via LinkedIn"
+
+# Multi-language settings
+languages: [ "en", "nl" ]
+default_lang: "en"
+exclude_from_localizations: [ "javascript", "images", "css", "README.md" ]
 
 # Build settings
 markdown: kramdown
@@ -19,8 +24,7 @@ plugins:
 - jekyll-feed
 - jekyll-sitemap
 - jekyll-seo-tag
-
-# Pagination
+- jekyll-multiple-languages-plugin# Pagination
 paginate: 5
 paginate_path: "/page:num/"
 

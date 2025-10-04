@@ -9,22 +9,17 @@ author:
   name: "Daniël Stegeman"
   email: "Connect via LinkedIn"
 
-# Multi-language settings
-languages: [ "en", "nl" ]
-default_lang: "en"
-exclude_from_localizations: [ "javascript", "images", "css", "README.md" ]
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Jekyll plugins
 plugins:
 - jekyll-feed
 - jekyll-sitemap
 - jekyll-seo-tag
-- jekyll-multiple-languages-plugin# Pagination
+- jekyll-remote-theme
 paginate: 5
 paginate_path: "/page:num/"
 

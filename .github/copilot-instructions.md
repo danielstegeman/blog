@@ -1,38 +1,34 @@
 # This file contains instructions for AI coding agents working on this Jekyll blog repository.
 
 ## Project Overview
-This is a Jekyll-based blog hosted on GitHub Pages with multi-language support (English/Dutch). The site uses the Minima theme and focuses on clean, readable content presentation.
+This is a Jekyll-based blog hosted on GitHub Pages. The site uses the Cayman theme and focuses on clean, readable content presentation with a focus on software engineering insights.
 
 ## Key Architecture & Patterns
 
 ### Site Structure
-- **`_config.yml`**: Main Jekyll configuration with site metadata, plugins, and multi-language settings
-- **`_posts/`**: English blog posts in Markdown format following `YYYY-MM-DD-title.md` naming convention
-- **`_posts/nl/`**: Dutch blog posts following same naming convention
-- **`_i18n/`**: Translation files for site strings (en.yml, nl.yml)
-- **`index.md`**: English homepage using the `home` layout
-- **`nl/index.md`**: Dutch homepage
-- **`about.md`**: English about page
-- **`nl/about.md`**: Dutch about page
+- **`_config.yml`**: Main Jekyll configuration with site metadata and plugins
+- **`_posts/`**: Blog posts in Markdown format following `YYYY-MM-DD-title.md` naming convention
+- **`_layouts/`**: Custom layouts (default, post, page, home) compatible with Cayman theme
+- **`index.html`**: Homepage using the `home` layout (HTML for pagination support)
+- **`about.md`**: About page using the `page` layout
 
-### Multi-Language Patterns
-- Uses `jekyll-multiple-languages-plugin` for i18n support
-- Default language is English (`en`), secondary is Dutch (`nl`)
-- Dutch content goes in `/nl/` subdirectory or `_posts/nl/` for posts
-- Translation strings stored in `_i18n/en.yml` and `_i18n/nl.yml`
-- Language switcher can be added to layouts using plugin helpers
+### Theme and Layout
+- Uses `pages-themes/cayman` remote theme via GitHub Pages
+- Custom layouts in `_layouts/` directory override theme defaults
+- Cayman theme provides clean, GitHub-style design with header and main content area
+- Layouts include proper semantic markup and SEO optimization
 
 ### Content Patterns
 - All posts use YAML front matter with layout, title, date, categories, and tags
-- Categories are broad topics (e.g., "general"/"algemeen", "technical"/"technisch")
+- Categories are broad topics (e.g., "general", "technical", "software-architecture")
 - Tags are specific keywords for detailed classification
 - Dates must be in ISO format: `YYYY-MM-DD HH:MM:SS +0000`
-- Dutch posts should have Dutch categories/tags for better organization
+- Pagination is enabled (5 posts per page)
 
 ### Deployment Workflow
 - Direct deployment from main branch via GitHub Pages
 - GitHub automatically builds Jekyll sites when files are pushed
-- Multi-language plugin is supported by GitHub Pages
+- Uses `github-pages` gem for compatibility with GitHub Pages environment
 
 ## Development Commands
 
@@ -49,7 +45,6 @@ bundle exec jekyll build
 
 ## Writing New Posts
 
-### English Posts
 1. Create file in `_posts/` with format: `YYYY-MM-DD-post-title.md`
 2. Include required front matter:
    ```yaml
@@ -62,24 +57,15 @@ bundle exec jekyll build
    ---
    ```
 
-### Dutch Posts
-1. Create file in `_posts/nl/` with format: `YYYY-MM-DD-post-title.md`
-2. Use Dutch categories and tags:
-   ```yaml
-   ---
-   layout: post
-   title: "Je Titel Hier"
-   date: YYYY-MM-DD HH:MM:SS +0000
-   categories: [categorie1, categorie2]
-   tags: [tag1, tag2]
-   ---
-   ```
-
-## Multi-Language Features
-- **URLs**: English at `/`, Dutch at `/nl/`
-- **Post URLs**: English `/YYYY/MM/DD/title/`, Dutch `/nl/YYYY/MM/DD/title/`
-- **Navigation**: Automatic language-aware navigation
-- **Translations**: Add new strings to `_i18n/en.yml` and `_i18n/nl.yml`
+## Theme Customization
+- **Remote Theme**: Uses `pages-themes/cayman@v0.2.0` via `jekyll-remote-theme`
+- **Layouts**: Custom layouts in `_layouts/` directory override theme defaults
+- **Styling**: Cayman theme provides built-in CSS, can be customized via `_sass/` or `assets/css/`
+- **Layout Structure**: 
+  - `default.html`: Base layout with Cayman header, navigation, and footer
+  - `post.html`: Blog post layout with metadata and content
+  - `page.html`: Static page layout
+  - `home.html`: Homepage layout with post listings and pagination
 
 ## GitHub Pages Setup
 - Repository must be public or have GitHub Pro for private repos
@@ -89,7 +75,6 @@ bundle exec jekyll build
 
 ## Customization Points
 - Update author info and site URL in `_config.yml`
-- Add new translation strings in `_i18n/` files
-- Modify theme by overriding Minima layouts in `_layouts/` directory
+- Modify theme by overriding Cayman layouts in `_layouts/` directory
 - Add custom CSS in `_sass/` or `assets/css/`
 - Configure additional Jekyll plugins in `_config.yml` and `Gemfile`

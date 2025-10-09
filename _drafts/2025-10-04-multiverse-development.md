@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Multiverse Development Cycle with AI Agents"
-date: 2025-10-04 12:00:00 +0000
+date: 2025-10-09 12:00:00 +0200
 categories: [general, architecture, ai]
 tags: [ai-agents, agile, way-of-work, copilot, llm, documentation, feature-design, iteration, context, validation]
 ---

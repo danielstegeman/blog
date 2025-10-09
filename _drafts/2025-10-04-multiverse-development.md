@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Multiverse Development Cycle with Agents"
+title: "Multiverse Development Cycle with AI Agents"
 date: 2025-10-04 12:00:00 +0000
-categories: [general]
-tags: []
+categories: [general, architecture, ai]
+tags: [ai-agents, agile, way-of-work, copilot, llm, documentation, feature-design, iteration, context, validation]
 ---
 
 For decades, the software development lifecycle has followed a well-established, linear path. Whether using waterfall, agile, or DevOps-inspired approaches, the process typically moves step by step: requirements are gathered, designs are created, code is implemented, tests are written and executed, and finally, the product is deployed and maintained. Each phase is expected to build on the previous one, with clear boundaries and plenty of review in between.

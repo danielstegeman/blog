@@ -6,7 +6,7 @@ categories: [general]
 tags: []
 ---
 
-For decades, the software development lifecycle has followed a well-established, linear path. Whether using waterfall, agile, or even DevOps-inspired approaches, the process typically moves step by step: requirements are gathered, designs are created, code is implemented, tests are written and executed, and finally, the product is deployed and maintained. Each phase is expected to build on the previous one, with clear boundaries and plenty of review in between.
+For decades, the software development lifecycle has followed a well-established, linear path. Whether using waterfall, agile, or DevOps-inspired approaches, the process typically moves step by step: requirements are gathered, designs are created, code is implemented, tests are written and executed, and finally, the product is deployed and maintained. Each phase is expected to build on the previous one, with clear boundaries and plenty of review in between.
 
 However, in practice, this process is sometimes far from perfect. How often have you meticulously followed all the steps, only to discover during implementation that your analysis and design are technically unfeasible? Or that acceptance tests reveal completely unexpected requirements? Agile methodology attempts to solve this by making cycles shorter and work increments smaller. 
 

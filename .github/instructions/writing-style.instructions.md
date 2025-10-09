@@ -41,7 +41,7 @@ This guide describes the preferred writing style and tone for blog posts based o
 
 ### Sentence Structure
 - Mix shorter, punchy sentences with longer, explanatory ones
-- Use em dashes for emphasis and clarification
+- Don't use em dashes for emphasis and clarification
 - Prefer active voice: "AI tools enjoy nearly the same benefits" vs. "The same benefits are enjoyed by AI tools"
 
 ### Technical Communication

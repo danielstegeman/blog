@@ -103,3 +103,25 @@ This guide describes the preferred writing style and tone for blog posts based o
 **Practical Focus**: Always return to real-world application and measurable outcomes
 
 **Professional Growth Mindset**: Position learning and experimentation as ongoing processes
+
+## Front Matter Requirements
+
+### Social Media Preview Images
+- **Required**: Add `image:` field to front matter when the post contains images
+- **Path Format**: Use site-relative paths starting with `/blog/assets/images/YYYY-MM-DD/image.png`
+- **Recommended Size**: 1200×630 pixels for optimal social media preview display
+- **Purpose**: This field is automatically used by jekyll-seo-tag to generate Open Graph (og:image) and Twitter Card meta tags
+- **Convention**: Use the first or most representative image from your post content
+- **Posts without images**: Do not add an image field; no social preview will be generated
+
+**Example front matter with image:**
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: 2026-01-21 12:00:00 +0000
+categories: [category1, category2]
+tags: [tag1, tag2, tag3]
+image: /blog/assets/images/2026-01-21/image.png
+---
+```

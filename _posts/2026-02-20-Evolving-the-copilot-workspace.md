@@ -4,11 +4,14 @@ title: "Evolving the GitHub Copilot workspace as a team"
 date: 2026-03-05 12:00:00 +0000
 categories: [technical, productivity]
 tags: [agentic-development, github-copilot, ai-agents, copilot-skills, team-collaboration, developer-workflow, context-engineering]
+image: /blog/assets/images/2026-02-20/image.png
 ---
 
 As agentic development gains an ever stronger foothold in my personal development workflow, I have started to run into issues with managing all my different agent files, skills and instructions. I like to move fast and experiment with different approaches, which means I have a lot of different kinds of agents, instructions and skills that I want to keep track of.
 
 However, I am still working within a single repository used by many more than myself. Keeping them in a separate branch is a hassle when switching often and can lead to accidental merges. But fully including them in the merge process is also not ideal, as they are often in a state of flux and not ready for use by others.
+
+![Garden with a messy field and a well-maintained field, illustrating the concept of organizing a workspace for growth and evolution](/blog/assets/images/2026-02-20/image.png)
 
 I would definitely agree that you should not just check in any old crap into the main branch. But reviewing and perfecting them each time is also not ideal, as I will have evolved them further by the time they are ready for use. Also, not everyone is on the same skill level when it comes to agentic development.
 

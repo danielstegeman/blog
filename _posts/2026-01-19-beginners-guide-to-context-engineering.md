@@ -4,6 +4,7 @@ title: "The fundamentals of context engineering"
 date: 2026-01-21 12:00:00 +0000
 categories: [general, ai, architecture]
 tags: [context-engineering, ai-agents, software-development, prompts, llm]
+image: /blog/assets/images/2026-01-19/image.png
 ---
 
 These days I only manually edit a line of code here or there on rare occasions. It's not because I have switched to being a Product Owner, but rather because Copilot is doing almost all of it. I have never written (and deleted) so many lines of code before. To me, it is the most agile way of making software right now. It lets me iterate fast, gather feedback and improve software. In my experience, it has been incredibly effective. That's why I am always incredibly surprised to hear people discarding AI saying: "It never does what I want!" My response is always: "You need to invest more in context engineering." In this blogpost, I'll explain how to get the most out of context engineering and share how to utilize agents to further enhance your capabilities. You can find some examples of my context engineering prompts and agents on my [Agentic development examples Github](https://github.com/danielstegeman/Agentic-development-examples/).

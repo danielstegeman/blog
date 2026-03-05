@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Evolving the Github Copilot workspace as a team"
-date: 2026-02-20 12:00:00 +0000
+title: "Evolving the GitHub Copilot workspace as a team"
+date: 2026-03-05 12:00:00 +0000
 categories: [technical, productivity]
 tags: [agentic-development, github-copilot, ai-agents, copilot-skills, team-collaboration, developer-workflow, context-engineering]
 ---
@@ -15,7 +15,7 @@ I would definitely agree that you should not just check in any old crap into the
 So I have been in search for answers to these problems for a while now. I think it comes down to organising the Copilot workspace with some specific considerations in mind.
 
 ## Copilot folder structure
-Months ago, when this whole Github Copilot thing was still quite new, you had to put all your agents (chatmodes back then), instructions and prompts in the ./github folder in your repository. I had never questioned that structure until I started running into the aforementioned problems. But it turns out, you can actually have a folder outside of the repository to be used for agents and skills. But why only those two? Why not also instructions and prompts? That made me start to think some more about the actual purpose of each of the different types of files.
+Months ago, when GitHub Copilot was still quite new, you had to put all your agents (chat modes back then), instructions and prompts in the ./github folder in your repository. I had never questioned that structure until I started running into the aforementioned problems. But it turns out, you can actually have a folder outside of the repository to be used for agents and skills. But why only those two? Why not also instructions and prompts? That made me start to think some more about the actual purpose of each of the different types of files.
 
 ## Personal workflow vs team processes
 This discovery led me to reconsider the fundamental purpose of each file type. I think the main consideration on where a Copilot customization fits, is whether it is part of your personal workflow, or whether it is something that follows an established team process. If it is the former, it should be kept outside of the repository. If it is the latter, it should be kept inside of the repository and agreed upon by the team. This is not a hard rule, but I think it is a good starting point for deciding where to put what.
@@ -32,7 +32,7 @@ Instructions are a more recent addition to the Copilot customization options. I 
 Until now, I have mostly used agents for defining behaviour and context. But now I have started using skills for reusable context, I have started to see agents more as a place to orchestrate behaviour. These have been the biggest topic of discussion in my team. The workflow they contain is very personal, so there is no correct definition. It defines how the agent has to work and present information in a way that is most useful to me, so I can control that it does what I want it to do. Over time, the best aspects of personal workflows can be adopted by the team and become part of the team process. Then, you can take those aspects and put them in the instructions or skills. This gives you a scoped piece of the workflow, without needing every detail to be perfect.
 
 ### Skills
-Skills are the newest type of customization for Copilot. Anthropic originally introduced them for Claude, and they have since been adopted by Github Copilot as well. To me, this is a modern variant of the old prompts. They are a good place to put reusable pieces of context or instructions that can be easily called by agents. Skills can be part of your personal workflow or team processes, depending on their purpose and usage. If a part of your personal workflow is shared by more agents, it can be put in a personal skill. [Like having the agent review your code like Gilfoyle from Silicon Valley](https://github.com/github/awesome-copilot/blob/main/agents/gilfoyle.agent.md). 
+Skills are the newest type of customization for Copilot. Anthropic originally introduced them for Claude, and they have since been adopted by GitHub Copilot as well. To me, this is a modern variant of the old prompts. They are a good place to put reusable pieces of context or instructions that can be easily called by agents. Skills can be part of your personal workflow or team processes, depending on their purpose and usage. If a part of your personal workflow is shared by more agents, it can be put in a personal skill. [Like having the agent review your code like Gilfoyle from Silicon Valley](https://github.com/github/awesome-copilot/blob/main/agents/gilfoyle.agent.md). 
 When it is an established part of the team process, like how to refine a user story or how to write a test, it should be put in a team skill. 
 
 ## Organizing for evolution

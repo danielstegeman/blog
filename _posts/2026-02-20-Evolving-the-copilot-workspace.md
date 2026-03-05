@@ -4,7 +4,7 @@ title: "Evolving the GitHub Copilot workspace as a team"
 date: 2026-03-05 12:00:00 +0000
 categories: [technical, productivity]
 tags: [agentic-development, github-copilot, ai-agents, copilot-skills, team-collaboration, developer-workflow, context-engineering]
-image: /blog/assets/images/2026-02-20/image.png
+image: /assets/images/2026-02-20/image.png
 ---
 
 As agentic development gains an ever stronger foothold in my personal development workflow, I have started to run into issues with managing all my different agent files, skills and instructions. I like to move fast and experiment with different approaches, which means I have a lot of different kinds of agents, instructions and skills that I want to keep track of.
